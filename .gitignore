@@ -1,0 +1,13 @@
+.vs/
+RoofStock.CodingExercise.Api.Data/bin/
+RoofStock.CodingExercise.Api.Data/obj/
+RoofStock.CodingExercise.Api.Domain/obj/
+RoofStock.CodingExercise.Api/bin/
+RoofStock.CodingExercise.Api.Domain/bin/
+RoofStock.CodingExercise.Api/obj/
+RoofStock.CodingExercise.DatabaseUtil/bin/
+RoofStock.CodingExercise.DatabaseUtil/obj/
+RoofStock.CodingExercise.UI/bin/
+RoofStock.CodingExercise.UI/obj/
+RoofStock.CodingExersice.Database/bin/
+RoofStock.CodingExersice.Database/obj/
