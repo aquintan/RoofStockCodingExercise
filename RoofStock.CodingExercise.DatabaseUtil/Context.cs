@@ -1,13 +1,22 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using RoofStock.CodingExercise.Api.Data.Database;
 
 namespace RoofStock.CodingExercise.DatabaseUtil
 {
     public class Context : PropertiesContext
     {
+        private readonly IConfiguration _config;
+
+        public Context(IConfiguration config)
+        {
+            _config = config;
+        }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=localhost;Database=RoofStock;User Id=sa;Password=4lv4r0P4ssw0rd$;Trusted_Connection=False;");
+            var connectionString = _config["DbConnectionString"];
+            optionsBuilder.UseSqlServer(connectionString);
         }
     }
 }
